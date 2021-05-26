@@ -4,7 +4,8 @@ from bs4 import BeautifulSoup
 def dict_constructor(html: str, nit: str) -> dict:
     """
     web scraping to web page
-    :param html:
+    :param nit: nit
+    :param html: html page to scrapping
     :return:
     """
     config_map = {}
@@ -30,5 +31,5 @@ def dict_constructor(html: str, nit: str) -> dict:
                 "nit": nit,
                 "rz": "Nit no encontrado"
             }
-            print(f"Se encontro un error en la extraccion de los datos\nERROR:{err}")
+            print(f"Se encontro un error en la extraccion de los datos, nit: {nit}\nERROR:{err}")
     return config_map
