@@ -5,8 +5,6 @@ from modules.dict_constrctor import dict_constructor
 from sys import argv
 import pandas as pd
 
-list_test = ["11300009", "1130660936", "1143130597", "901037494"]
-
 
 def main():
     """
